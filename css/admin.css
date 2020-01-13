@@ -1,12 +1,46 @@
+:root {
+    --blue: #2E82BC;
+    --darkblue: #0C4E7A;
+    --indigo: #6610f2;
+    --purple: #330033;
+    --pink: #e83e8c;
+    --red: #B21F1F;
+    --darkred: #840909;
+    --orange: #fd7e14;
+    --yellow: #FCBE10;
+    --darkyellow: #F7931E;
+    --green: #77B238;
+    --darkgreen: #4E771E;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #3d3d3d;
+    --primary: #330033;
+    --secondary: #1DC0D6;
+    --success: #77B238;
+    --info: #17a2b8;
+    --warning: #FCBE10;
+    --danger: #B21F1F;
+    --light: #f8f9fa;
+    --dark: #232323;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
 
-/*Comienza header and footer*/
+@font-face{
+    font-family: HeadingPro-Regular;
+    src: url(./fonts/Heading-Pro-Book-trial.woff);
+}
+@font-face{
+    font-family: HeadingPro-Bold;
+    src: url(./fonts/Heading-Pro-Bold-trial.woff);
+}
+/*Comienza header*/
 
 .tamanochico{
-
-  position: sticky;
-  width: 50px;
-  height: 50px;
-
+  width: 20em;
+  height: 20em;
 }
 
 #menusuario{
@@ -27,6 +61,7 @@
   width: 70px;
   height: 70px;
   margin-top: 20px;
+
 }
 
 .dropdown-item:hover{
@@ -39,8 +74,10 @@
   margin-right: 5px;
 }
 
-#mitablero{
-  margin-bottom: 50px;
+.mitablero{
+  font-family: 'HeadingPro-Bold';
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 /*Start cartilla*/
@@ -51,14 +88,15 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
+  font-family: 'HeadingPro-Bold';
 }
 
 #titletable{
   background-color: #330033;
   color: white;
   border-color: #2E82BC;
-
 }
+
 #bodytable{
   border-color: #2E82BC;
   border-style: solid;
@@ -68,9 +106,13 @@
 
 }
 
+
+.petpic{
+  margin-top: 2em;
+}
 #nombre1,#nombre2,#nombre3,#nombre4,#nombre5,#nombre6,#nombre7,#nombre8{
 color: #2E82BC;
-font-family: 'Assistant';
+font-family: 'HeadingPro-Bold';
 font-weight: bold;
 font-size: 1.5em;
 
@@ -86,13 +128,105 @@ font-size: 1.5em;
 
 #cartdig{
 
-  font-family: arial;
+  font-family: 'HeadingPro-Bold';
   color: #330033;
   font-weight: bold;
 }
 
 .titmascos{
   color: #330033;
-  font-size: 2.5em;
+  font-size: 3.5em;
   text-decoration: underline #FCBE10;
+  font-family: 'HeadingPro-Bold';
+}
+
+/* Comienza footer*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+}
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+}
+.social-media a{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    color: var(--white);
+    background: transparent;
+    transition: .3s ease-in-out;
+}
+.social-media a:hover{
+    color: var(--yellow);
+}
+.footer-links {
+    font-family: HeadingPro-Bold;
+    width: 100%;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.footer-links li {
+    list-style-image: url(../assets/SVG/huella-perro.svg);
+    margin: 0 1.5rem;
+}
+.footer-links li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    transition: .3s ease-in-out;
+}
+.footer-links li a:hover {
+    color: var(--yellow);
+}
+.footer-brand{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0;
+    text-align: center;
+    color: var(--white);
+    background: rgba(0, 0, 0, .2);
+}
+
+
+@media (max-width: 992px){
+    .carousel-caption{
+        padding: 0 30% 0 15%;
+    }
+    .carousel-caption h3{
+        font-size: 2rem;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-caption h3, .carousel-caption p{
+        display: none;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.5rem;
+    }
 }
