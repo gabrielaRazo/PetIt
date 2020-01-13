@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet it - Oficial</title>
+    <script src="./js/all.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/icono-petit.png" type<="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-petit navbar-expand-md" id="navbarPetit">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/SVG/logo-petit.svg" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSignup" aria-controls="navbarSignup" aria-expanded="false" aria-label="Toggle navigation">
+               Menú<i class="fa fa-bars ml-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSignup">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="btn btn-signup dropdown-toggle" id="navbarSignup" role="button" data-toggle="dropdown" href="#">Ingresar</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarSignup">
+                          <a class="dropdown-item" href="#">Iniciar sesión</a>
+                          <a class="dropdown-item" href="#">Crear cuenta</a>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/JPG/header-01@72x.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h3>Te ayudamos con tu mascota</h3>
+                  <p>Ahora somos más 3,000 dueños que hemos darle una mejor calidad de vida a nuestras mascotas</p>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <i class="fas fa-chevron-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </header>
+    <section class="py-5">
+      <div class="container">
+        <div class="title">
+          <h2>Apóyate en nosotros</h2>
+          <div class="title-divider"></div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="icon-box">
+              <span class="icon-app rounded-circle">
+                <img src="./assets/SVG/icono-cartilla.svg" class="icon-img" alt="">
+              </span>
+              <div class="box-icon-content">
+                <h3>Cartilla digital</h3>
+                <p>Da de alta a tu mascota para que tenga su cartilla digital</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="icon-box">
+              <span class="icon-app rounded-circle">
+                <img src="./assets/SVG/icono-jeringa.svg" class="icon-img" alt="">
+              </span>
+              <div class="box-icon-content">
+                <h3>Vacúnalo</h3>
+                <p>Revisa en todo momento el calendario de vacunación de tu mascota</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+            <div class="icon-box">
+              <span class="icon-app rounded-circle">
+                <img src="./assets/SVG/icono.campana.svg" class="icon-img" alt="">
+              </span>
+              <div class="box-icon-content">
+                <h3>Recibe Notificaciones</h3>
+                <p>Recibe notificaciones en tu correo para vacunar a tu mascota</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Aviso de privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer-brand">
+        ®PET IT 2020 Reservados todos los derechos.
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
