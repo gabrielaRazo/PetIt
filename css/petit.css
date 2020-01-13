@@ -1,4 +1,49 @@
 
+/*Comienza header and footer*/
+
+.tamanochico{
+
+  position: sticky;
+  width: 50px;
+  height: 50px;
+
+}
+
+#menusuario{
+  padding: 1.5em;
+  margin: 20px;
+  background-color: white;
+  color: #330033;
+  border-color: white;
+}
+
+.purple{
+  background-color: #330033;
+  color: white;
+}
+
+
+.img_menu{
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+}
+
+.dropdown-item:hover{
+  background-color: #330033;
+  color: white !important;
+}
+
+.fas{
+  color:  #330033;
+  margin-right: 5px;
+}
+
+#mitablero{
+  margin-bottom: 50px;
+}
+
+/*Start cartilla*/
 
 #vacunas{
   background-color: #2E82BC;
@@ -28,6 +73,7 @@ color: #2E82BC;
 font-family: 'Assistant';
 font-weight: bold;
 font-size: 1.5em;
+
 }
 
 #llamada1,#llamada2,#llamada3,#llamada4,#llamada5,#llamada6,#llamada7,#llamada8{
@@ -35,51 +81,18 @@ font-size: 1.5em;
   font-family: 'Assistant';
   font-weight: bold;
   font-size: 1em;
+  padding-bottom: 10px;
 }
 
+#cartdig{
 
-
-
-
-
-
-
-/*Comienza la parte de cabeza y pies*/
-
-#icono{
-  margin: 5px;
-  position: sticky;
-  width: 100px;
-  height: 100px;
-  padding: 1.5em
-}
-
-#menusuario{
-  padding: 1.5em;
-  margin: 20px;
-  background-color: white;
+  font-family: arial;
   color: #330033;
-  border-color: white;
+  font-weight: bold;
 }
 
-.purple{
-  background-color: #330033;
-  color: white;
-}
-
-
-.img_menu{
-  width: 70px;
-  height: 70px;
-  margin-top: 20px;
-}
-
-.dropdown-ite:hover{
-  background-color: #330033;
-  color: white !important;
-}
-
-.fas{
-  color:  #330033;
-  margin-right: 5px;
+.titmascos{
+  color: #330033;
+  font-size: 2.5em;
+  text-decoration: underline #FCBE10;
 }
