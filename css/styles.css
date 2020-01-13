@@ -1,0 +1,273 @@
+:root {
+    --blue: #2E82BC;
+    --darkblue: #0C4E7A;
+    --indigo: #6610f2;
+    --purple: #330033;
+    --pink: #e83e8c;
+    --red: #B21F1F;
+    --darkred: #840909;
+    --orange: #fd7e14;
+    --yellow: #FCBE10;
+    --darkyellow: #F7931E;
+    --green: #77B238;
+    --darkgreen: #4E771E;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #3d3d3d;
+    --primary: #330033;
+    --secondary: #1DC0D6;
+    --success: #77B238;
+    --info: #17a2b8;
+    --warning: #FCBE10;
+    --danger: #B21F1F;
+    --light: #f8f9fa;
+    --dark: #232323;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+@font-face{
+    font-family: Assistant-Regukar;
+    src: url(./fonts/Assistant-Regular.woff);
+}
+@font-face{
+    font-family: Assistant-Bold;
+    src: url(./fonts/Assistant-Bold.woff);
+}
+@font-face{
+    font-family: HeadingPro-Regular;
+    src: url(./fonts/Heading-Pro-Book-trial.woff);
+}
+@font-face{
+    font-family: HeadingPro-Bold;
+    src: url(./fonts/Heading-Pro-Bold-trial.woff);
+}
+/*GENERAL SETTINGS*/
+body {
+    font-family: Assistant-Regular;
+}
+.title h2{
+    font-family: HeadingPro-Bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+}
+.title-divider {
+    width: 30%;
+    height: 2px;
+    margin: 1rem auto;
+    background-color: var(--yellow);
+}
+/*menu*/
+.navbar-toggler i {
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-petit {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+.navbar-petit ul li a{
+    color: var(--primary);
+    margin: 0 5px;
+    font-size: 1rem;
+    transition: .3s ease-in-out;
+}
+.navbar-petit ul li a:hover{
+    color: var(--yellow);
+}
+.dropdown-menu{
+    margin: .8rem 0;
+    border-radius: 0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--yellow);
+    text-decoration: none;
+    background-color: var(--primary);
+}
+.btn-signup {
+    color: var(--primary);
+    border: .1rem solid var(--primary);
+}
+.btn-signup:hover, .btn-signup:focus{
+    color: var(--yellow);
+    background: var(--primary);
+}
+/*CAROUSEL*/
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: rgba(255,255,255,.5);
+    border: 1px solid var(--primary)
+}
+.carousel-indicators .active {
+    opacity: .7;
+    background: var(--secondary);
+}
+.carousel-control-prev, .carousel-control-next{
+    font-size: 3rem;
+    transition: .3s ease-in-out;
+    z-index: 10;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    color: var(--yellow);
+    z-index: 10;
+}
+.carousel-caption{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15% 30% 15% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    flex-direction: column;
+    text-align: left;
+    background-image: url('../assets/SVG/bg-gradient-header.svg');
+}
+.carousel-caption h3{
+    font-family: Assistant-Bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .7);
+}
+.carousel-caption p{
+    font-size: 1.2rem;
+}
+/*ICONS BOX*/
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+.icon-app {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem auto;
+    padding: .5rem;
+    background: #ffffff;
+    border: 1px solid var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-img {
+    width: 50px;
+}
+.box-icon-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem 0;
+    text-align: center;
+}
+.box-icon-content h3 {
+    font-family: HeadingPro-Bold;
+    text-transform: uppercase;
+}
+/*PIE DE PAGINA*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+}
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+}
+.social-media a{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    color: var(--white);
+    background: transparent;
+    transition: .3s ease-in-out;
+}
+.social-media a:hover{
+    color: var(--yellow);
+}
+.footer-links {
+    font-family: HeadingPro-Bold;
+    width: 100%;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.footer-links li {
+    list-style-image: url(../assets/SVG/huella-perro.svg);
+    margin: 0 1.5rem;
+}
+.footer-links li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    transition: .3s ease-in-out;
+}
+.footer-links li a:hover {
+    color: var(--yellow);
+}
+.footer-brand{
+    width: 100%;
+    height: auto;
+    padding: .5rem 0;
+    text-align: center;
+    color: var(--white);
+    background: rgba(0, 0, 0, .2);
+}
+
+
+@media (max-width: 992px){
+    .carousel-caption{
+        padding: 0 30% 0 15%;
+    }
+    .carousel-caption h3{
+        font-size: 2rem;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-caption h3, .carousel-caption p{
+        display: none;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 1.5rem;
+    }
+}
