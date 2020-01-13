@@ -1,7 +1,7 @@
 <?php include "./header.html" ?><!--Se manda llamara la pagina de header mediante php-->
 
 <section><!--Toda la parte que contien lo relacionado a la catilla digital-->
-  <div class="container-md"><!--es el contenedor de la cartilla digital-->
+  <div class="container-md border"><!--es el contenedor de la cartilla digital-->
     <div class="row"><!--renglón del titulo de la pagina y boton de imprimir-->
       <div class="col"><!--columna del titulo de la pagina-->
         <h1 class="titmascos">MI MASCOTA</h1>
@@ -10,15 +10,15 @@
         <button type="button" class="btn btn-danger btn-lg float-right"> <i class="fas fa-print"></i>  Imprimir</button>
       </div><!-- termina columna botón de imprimir-->
     </div><!--termina renglón del titulo de la pagina y boton de imprimir-->
-    <div class="row"><!--renglón cartilla digital-->
+    <div class="row border"><!--renglón cartilla digital-->
       <div class="col"><!--columna logo y titulo para la cartilla digital-->
-          <img class="tamanochico" src="img/icono-petit.png" alt="icono">
+          <img class="tamanochico" src="./assets/SVG/logo-petit.svg" alt="icono">
           <h1 class="float-center" id= "cartdig">CARTILLA DIGITAL</h1>
       </div><!--termina columna logo para la cartilla digital-->
     </div><!-- termina renglón cartilla digital-->
-    <div class="row"><!--renglón cartilla digital donde estan datos e imagen de mascota-->
+    <div class="row border"><!--renglón cartilla digital donde estan datos e imagen de mascota-->
           <div class="col"><!--columna cartilla digital donde esta imagen de mascota-->
-            <img class="img-rounded" src="https://via.placeholder.com/250x250" >
+            <img class="img-rounded rounded petpic" src="https://via.placeholder.com/250x250" >
           </div><!--termina columna cartilla digital donde esta imagen de mascota-->
         <div class="col"><!--columna cartilla digital donde estan datos1 de mascota-->
           <label id= "nombre8" class="col-12 ">Nombre:</label>
