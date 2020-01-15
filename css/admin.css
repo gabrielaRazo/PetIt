@@ -1,162 +1,167 @@
 :root {
-    --blue: #2E82BC;
-    --darkblue: #0C4E7A;
-    --indigo: #6610f2;
-    --purple: #330033;
-    --pink: #e83e8c;
-    --red: #B21F1F;
-    --darkred: #840909;
-    --orange: #fd7e14;
-    --yellow: #FCBE10;
-    --darkyellow: #F7931E;
-    --green: #77B238;
-    --darkgreen: #4E771E;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #3d3d3d;
-    --primary: #330033;
-    --secondary: #1DC0D6;
-    --success: #77B238;
-    --info: #17a2b8;
-    --warning: #FCBE10;
-    --danger: #B21F1F;
-    --light: #f8f9fa;
-    --dark: #232323;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-@font-face{
-    font-family: HeadingPro-Regular;
-    src: url(./fonts/Heading-Pro-Book-trial.woff);
+  --blue: #2e82bc;
+  --darkblue: #0c4e7a;
+  --indigo: #6610f2;
+  --purple: #330033;
+  --pink: #e83e8c;
+  --red: #b21f1f;
+  --darkred: #840909;
+  --orange: #fd7e14;
+  --yellow: #fcbe10;
+  --darkyellow: #f7931e;
+  --green: #77b238;
+  --darkgreen: #4e771e;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #3d3d3d;
+  --primary: #330033;
+  --secondary: #1dc0d6;
+  --success: #77b238;
+  --info: #17a2b8;
+  --warning: #fcbe10;
+  --danger: #b21f1f;
+  --light: #f8f9fa;
+  --dark: #232323;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
-@font-face{
-    font-family: HeadingPro-Bold;
-    src: url(./fonts/Heading-Pro-Bold-trial.woff);
+
+@font-face {
+  font-family: HeadingPro-Regular;
+  src: url(./fonts/Heading-Pro-Book-trial.woff);
+}
+@font-face {
+  font-family: HeadingPro-Bold;
+  src: url(./fonts/Heading-Pro-Bold-trial.woff);
 }
 /*Comienza header*/
 
-.tamanochico{
+.tamanochico {
   width: 8em;
   height: 8em;
   margin: -1em;
 }
 
-#menusuario{
-
+#menusuario {
   background-color: white;
   color: #330033;
   border-color: white;
 }
 
-.purple{
+.purple {
   background-color: #330033;
   color: white;
 }
 
-
-.img_menu{
+.img_menu {
   width: 70px;
   height: 70px;
   margin-top: 20px;
-
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: #330033;
   color: white !important;
 }
 
-.fas{
-  color:  #330033;
+.fas {
+  color: #330033;
   margin-right: 5px;
 }
 
-.mitablero{
-  font-family: 'HeadingPro-Bold';
+.mitablero {
+  font-family: "HeadingPro-Bold";
   text-transform: uppercase;
   font-size: 2em;
   margin: 10px;
 }
 
-#mitableroid{
+#mitableroid {
   margin-bottom: 3em;
 }
 
 /*Start cartilla*/
 
-
-.contenedor1{
+.contenedor1 {
   border-color: var(--blue);
   border-style: solid;
   border-left-width: medium;
 }
 
-#vacunas{
-  background-color: #2E82BC;
+#vacunas {
+  background-color: #2e82bc;
   font-size: 2em;
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: 'HeadingPro-Bold';
+  font-family: "HeadingPro-Bold";
 }
 
-#titletable{
+#titletable {
   background-color: #330033;
   color: white;
-  border-color: #2E82BC;
+  border-color: #2e82bc;
 }
 
-#bodytable{
-  border-color: #2E82BC;
+#bodytable {
+  border-color: #2e82bc;
   border-style: solid;
   border-width: medium;
-  font-family: 'Assistant', sans-serif;
-
-
+  font-family: "Assistant", sans-serif;
 }
 
-
-.petpic{
+.petpic {
   margin-top: 2em;
 }
-#nombre1,#nombre2,#nombre3,#nombre4,#nombre5,#nombre6,#nombre7,#nombre8{
-color: #2E82BC;
-font-family: 'HeadingPro-Bold';
-font-weight: bold;
-font-size: 1.5em;
-
+#nombre1,
+#nombre2,
+#nombre3,
+#nombre4,
+#nombre5,
+#nombre6,
+#nombre7,
+#nombre8 {
+  color: #2e82bc;
+  font-family: "HeadingPro-Bold";
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-#llamada1,#llamada2,#llamada3,#llamada4,#llamada5,#llamada6,#llamada7,#llamada8{
+#llamada1,
+#llamada2,
+#llamada3,
+#llamada4,
+#llamada5,
+#llamada6,
+#llamada7,
+#llamada8 {
   color: #330033;
-  font-family: 'Assistant';
+  font-family: "Assistant";
   font-weight: bold;
   font-size: 1em;
   padding-bottom: 10px;
 }
 
-#cartdig{
-
-  font-family: 'HeadingPro-Bold';
+#cartdig {
+  font-family: "HeadingPro-Bold";
   color: #330033;
   font-weight: bold;
 }
 
-.titmascos{
+.titmascos {
   color: #330033;
   font-size: 2.5em;
-  text-decoration: underline #FCBE10;
-  font-family: 'HeadingPro-Bold';
-
-
+  text-decoration: underline #fcbe10;
+  font-family: "HeadingPro-Bold";
 }
 
-
-#cartillalogo
-, #cartdig{
+#cartillalogo,
+#cartdig {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,97 +169,96 @@ font-size: 1.5em;
   image-orientation: center;
   margin-right: 2em;
   padding-left: 10px;
-
 }
-
 
 /* Comienza footer*/
 footer {
-    width: 100%;
-    height: auto;
-    background-color: var(--primary);
+  width: 100%;
+  height: auto;
+  background-color: var(--primary);
 }
 .social-media {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
 }
-.social-media a{
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    font-size: 2rem;
-    border-radius: 100%;
-    color: var(--white);
-    background: transparent;
-    transition: .3s ease-in-out;
+.social-media a {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 100%;
+  color: var(--white);
+  background: transparent;
+  transition: 0.3s ease-in-out;
 }
-.social-media a:hover{
-    color: var(--yellow);
+.social-media a:hover {
+  color: var(--yellow);
 }
 .footer-links {
-    font-family: HeadingPro-Bold;
-    width: 100%;
-    padding: .5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
+  font-family: HeadingPro-Bold;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }
 .footer-links li {
-    list-style-image: url(../assets/SVG/huella-perro.svg);
-    margin: 0 1.5rem;
+  list-style-image: url(../assets/SVG/huella-perro.svg);
+  margin: 0 1.5rem;
 }
 .footer-links li a {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--white);
-    transition: .3s ease-in-out;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.3s ease-in-out;
 }
 .footer-links li a:hover {
-    color: var(--yellow);
+  color: var(--yellow);
 }
-.footer-brand{
-    width: 100%;
-    height: auto;
-    padding: .5rem 0;
-    text-align: center;
-    color: var(--white);
-    background: rgba(0, 0, 0, .2);
-}
-
-
-@media (max-width: 992px){
-    .carousel-caption{
-        padding: 0 30% 0 15%;
-    }
-    .carousel-caption h3{
-        font-size: 2rem;
-    }
-    .carousel-indicators li {
-        width: 15px;
-        height: 15px;
-    }
-    .carousel-caption p{
-        font-size: 1rem;
-    }
+.footer-brand {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px){
-    .carousel-caption h3, .carousel-caption p{
-        display: none;
-    }
-    .carousel-indicators li {
-        width: 10px;
-        height: 10px;
-    }
-    .carousel-control-prev, .carousel-control-next {
-        font-size: 1.5rem;
-    }
+@media (max-width: 992px) {
+  .carousel-caption {
+    padding: 0 30% 0 15%;
+  }
+  .carousel-caption h3 {
+    font-size: 2rem;
+  }
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h3,
+  .carousel-caption p {
+    display: none;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 1.5rem;
+  }
 }
