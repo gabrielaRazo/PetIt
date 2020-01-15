@@ -1,19 +1,19 @@
 <?php include "./header.html" ?><!--Se manda llamara la pagina de header mediante php-->
 
+
 <section><!--Toda la parte que contien lo relacionado a la catilla digital-->
-  <div class="container-md border"><!--es el contenedor de la cartilla digital-->
+  <div class="container-md border contenedor1"><!--es el contenedor de la cartilla digital-->
     <div class="row"><!--renglón del titulo de la pagina y boton de imprimir-->
       <div class="col"><!--columna del titulo de la pagina-->
         <h1 class="titmascos">MI MASCOTA</h1>
       </div><!-- termina columna del titulo de la pagina-->
-      <div class="col"><!--columna botón de imprimir-->
-        <button type="button" class="btn btn-danger btn-lg float-right"> <i class="fas fa-print"></i>  Imprimir</button>
-      </div><!-- termina columna botón de imprimir-->
+
     </div><!--termina renglón del titulo de la pagina y boton de imprimir-->
     <div class="row border"><!--renglón cartilla digital-->
       <div class="col"><!--columna logo y titulo para la cartilla digital-->
-          <img class="tamanochico" src="./assets/SVG/logo-petit.svg" alt="icono">
-          <h1 class="float-center" id= "cartdig">CARTILLA DIGITAL</h1>
+
+          <h1 class="float-center" id= "cartdig">   <img id = "cartillalogo" class="" src="./assets/SVG/logo-petit.svg" width="100px" alt="icono">   CARTILLA DIGITAL</h1>
+
       </div><!--termina columna logo para la cartilla digital-->
     </div><!-- termina renglón cartilla digital-->
     <div class="row border"><!--renglón cartilla digital donde estan datos e imagen de mascota-->
@@ -47,47 +47,16 @@
       </div><!--termina columna cartilla digital donde estan el titulo de la tabla-->
     </div><!--termina renglón cartilla digital donde estan el titulo de la tabla-->
     <div class="table border6"><!--área donde esta la tabla-->
-      <table class="table"><!-- tabla-->
+      <table id ="table_vacunas" class="table"><!-- tabla-->
         <thead id ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
           <tr><!--fila donde estan los nombres de las columnas de la tabla-->
-            <th>S/N</th>
-            <th>TIPO DE VACUNA</th>
-            <th>FECHA</th>
-            <th>DESCRIPCIÓN</th>
+            <th data-field="sn">S/N</th>
+            <th data-field="tipovacuna">TIPO DE VACUNA</th>
+            <th data-field="fecha">FECHA</th>
+            <th data-field="descripcion">DESCRIPCIÓN</th>
           </tr><!-- termina fila donde estan los nombres de las columnas de la tabla-->
         </thead><!--termina área donde estan los nombres de las columnas de la tabla-->
-        <tbody id="bodytable"><!--cuerpo de la tabla-->
-          <tr><!--fila donde estan las columnas con los datos de la primera vacuna-->
-            <td>S</td>
-            <td>PARVOVIROSIS</td>
-            <td>15/01/2018</td>
-            <td>PARVOVIROSIS CANINA</td>
-          </tr><!--termina fila donde estan las columnas con los datos de la primera vacuna-->
-          <tr><!--fila donde estan las columnas con los datos de la segunda vacuna-->
-            <td>S</td>
-            <td>QUÍNTUPLE 1RA</td>
-            <td>15/01/2018</td>
-            <td>PARVOVIROSIS/MOQUILLO/HEPATITIS/PARAINFLUENZA</td>
-          </tr><!--termina fila donde estan las columnas con los datos de la segunda vacuna-->
-          <tr><!--fila donde estan las columnas con los datos de la tercera vacuna-->
-            <td>N</td>
-            <td>QUÍNTUPLE 2RA</td>
-            <td>08/05/2018</td>
-            <td>PARVOVIROSIS/MOQUILLO/HEPATITIS/PARAINFLUENZA</td>
-          </tr><!-- tremina fila donde estan las columnas con los datos de la tercera vacuna-->
-          <tr><!--fila donde estan las columnas con los datos de la cuarta vacuna-->
-            <td>S</td>
-            <td>SEXTUPLE</td>
-            <td>11/11/2018</td>
-            <td>LEPTOSPIROSIS CANINA</td>
-          </tr><!--termina fila donde estan las columnas con los datos de la cuarta vacuna-->
-          <tr><!--fila donde estan las columnas con los datos de la quinta vacuna-->
-            <td>S</td>
-            <td>TOS DE LAS PERRERAS</td>
-            <td>2/02/2019</td>
-            <td>RABIA CANINA</td>
-          </tr><!--termina fila donde estan las columnas con los datos de la quinta vacuna-->
-        </tbody><!--tremina cuerpo de la tabla-->
+
       </table><!--termina tabla-->
     </div><!--termina el área donde esta la tabla-->
   </div><!--termian el contenedor de la cartilla digital-->
