@@ -11,4 +11,6 @@ const menuTop = () => {
     navbarPetit.style.background = 'transparent';
     
   }
+  
+
 }
