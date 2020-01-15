@@ -89,23 +89,6 @@ body {
   font-size: 1rem;
   transition: 0.3s ease-in-out;
 }
-
-#navbarPetit_blog {
-  position: static;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  background: white;
-  box-shadow: 0 0 5px rgba(0.5, 0.5, 0.5, 0.5);
-}
-#navbarPetit_blog ul li a {
-  color: var(--primary);
-  margin: 0 5px;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-}
-
 .navbar-petit ul li a:hover {
   color: var(--yellow);
 }
@@ -123,11 +106,11 @@ body {
   color: var(--primary);
   border: 0.1rem solid var(--primary);
 }
-/* .btn-signup:hover,
+.btn-signup:hover,
 .btn-signup:focus {
   color: var(--yellow);
   background: var(--primary);
-} */
+}
 /*CAROUSEL*/
 .carousel-indicators li {
   width: 20px;
@@ -296,7 +279,7 @@ footer {
     font-size: 1.5rem;
   }
 }
-
+/* Estilos Blog */
 .card {
   margin-top: 15px;
   border: 15px;
@@ -348,20 +331,3 @@ h6 {
   src: url(./fonts/Assistant-Regular.woff);
   font-size: large;
 }
-
-/* @font-face {
-  font-family: Assistant-Regukar;
-  src: url(./fonts/Assistant-Regular.woff);
-}
-@font-face {
-  font-family: Assistant-Bold;
-  src: url(./fonts/Assistant-Bold.woff);
-}
-@font-face {
-  font-family: HeadingPro-Regular;
-  src: url(./fonts/Heading-Pro-Book-trial.woff);
-}
-@font-face {
-  font-family: HeadingPro-Bold;
-  src: url(./fonts/Heading-Pro-Bold-trial.woff);
-} */
