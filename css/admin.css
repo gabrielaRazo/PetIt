@@ -92,6 +92,8 @@
   border-color: var(--blue);
   border-style: solid;
   border-left-width: medium;
+  border-radius: 2em;
+  margin-bottom: 1em;
 }
 
 #vacunas{
@@ -101,40 +103,52 @@
   color: white;
   text-transform: uppercase;
   font-family: 'HeadingPro-Bold';
+  border-right: none;
 }
 
 #titletable{
   background-color: #330033;
   color: white;
-  border-color: #2E82BC;
-}
-
-#bodytable{
-  border-color: #2E82BC;
-  border-style: solid;
-  border-width: medium;
-  font-family: 'Assistant', sans-serif;
-
 
 }
+
 
 
 .petpic{
   margin-top: 2em;
+  margin-left: 1.5em;
+  height: 250px;
+  width: 250px;
 }
-#nombre1,#nombre2,#nombre3,#nombre4,#nombre5,#nombre6,#nombre7,#nombre8{
+
+.titelcol{
+  margin: 20px;
+}
+
+#borderrow {
+  border-radius: .50px;
+  border-color: #2E82BC;
+  border-style: solid;
+  border-width: auto;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.titulospet{
 color: #2E82BC;
-font-family: 'HeadingPro-Bold';
+font-family: 'Assistant';
 font-weight: bold;
 font-size: 1.5em;
+margin-top: 20px;
 
 }
 
-#llamada1,#llamada2,#llamada3,#llamada4,#llamada5,#llamada6,#llamada7,#llamada8{
+.datospet{
   color: #330033;
   font-family: 'Assistant';
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.3em;
   padding-bottom: 10px;
 }
 

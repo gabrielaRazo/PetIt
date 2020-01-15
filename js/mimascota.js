@@ -29,6 +29,40 @@ var data = [
 ];
 
 
+var datoscartilla = {
+  "name":"siri",
+  "gender":"Hembra",
+  "owner":"Parásito Domésticado",
+  "vetname":"Clínica Guau Vet",
+  "birth":"01 de diciembre del 2017",
+  "breed":"Golden Retriever",
+  "petid":"986214554",
+  "address":"Av. Argómedo #6241,Villa altos del nilo,Guadalajara",
+  "petpic":"assets/JPG/perrito.png"
+};
+
 $(document).ready(function() {
-  $('#table_vacunas').bootstrapTable({data:data})
+  llenarInfo()
+  llenarTabla();
 });
+
+function llenarInfo() {
+  setLabelText('#name', datoscartilla.name)
+  setLabelText('#gender', datoscartilla.gender)
+  setLabelText('#owner', datoscartilla.owner)
+  setLabelText('#vetname', datoscartilla.vetname)
+  setLabelText('#birth', datoscartilla.birth)
+  setLabelText('#breed', datoscartilla.breed)
+  setLabelText('#petid', datoscartilla.petid)
+  setLabelText('#address', datoscartilla.address)
+  $("#petpic").attr("src",datoscartilla.petpic);
+}
+
+function setLabelText(labelId, labelText){
+  $(labelId).empty()
+  $(labelId).append(labelText)
+}
+
+function llenarTabla() {
+  $('#table_vacunas').bootstrapTable({data:data})
+}
