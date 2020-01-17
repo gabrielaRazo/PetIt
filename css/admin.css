@@ -42,9 +42,9 @@
 /*Comienza header*/
 
 .tamanochico {
-  width: 8em;
-  height: 8em;
-  margin: -1em;
+  width: 10em;
+  height: auto;
+  padding: 2em 2em;
 }
 
 #menusuario {
