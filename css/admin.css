@@ -50,7 +50,8 @@
 #menusuario {
   background-color: white;
   color: #330033;
-  border-color: white;
+  border-color: none;
+  
 }
 
 .purple {

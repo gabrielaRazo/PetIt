@@ -17,27 +17,33 @@
     </div><!-- termina renglón cartilla digital-->
     <div class="row borderrow"><!--renglón cartilla digital donde estan datos e imagen de mascota-->
           <div class="col"><!--columna cartilla digital donde esta imagen de mascota-->
-            <img id= "petpic" class="img-rounded rounded petpic" src="" >
+            <img id= "petPic" class="img-rounded rounded petpic" src="" >
           </div><!--termina columna cartilla digital donde esta imagen de mascota-->
         <div class="col"><!--columna cartilla digital donde estan datos1 de mascota-->
           <label class="col-12 titulospet">Nombre:</label>
-          <label id="name" class="col-12 datospet"></label>
+          <label id="petName" class="col-12 datospet"></label>
           <label class="col-12 titulospet">Sexo:</label>
-          <label id="gender" class="col-12 datospet"></label>
+          <label id="petGender" class="col-12 datospet"></label>
+          <label class="col-12 titulospet">Color:</label>
+          <label id="petColor" class="col-12 datospet"></label>
           <label class="col-12 titulospet">Dueño:</label>
-          <label id="owner" class="col-12 datospet"></label>
-          <label class="col-12 titulospet">Veterinaria:</label>
-          <label id="vetname" class="col-12 datospet"></label>
+          <label id="petOwner" class="col-12 datospet"></label>
+          <label class="col-12 titulospet">Dirección:</label>
+          <label id="petAddress" class="col-12 datospet"></label>
+
         </div><!-- termina columna cartilla digital donde estan datos1 de mascota-->
         <div class="col"><!--columna cartilla digital donde estan datos1 de mascota-->
           <label class="col-12 titulospet">Fecha de Nacimiento:</label>
-          <label id="birth" class="col-12 datospet"></label>
+          <label id="petBirthDate" class="col-12 datospet"></label>
           <label class="col-12 titulospet">Raza:</label>
-          <label id="breed" class="col-12 datospet"></label>
+          <label id="petBreed" class="col-12 datospet"></label>
+          <label class="col-12 titulospet">Teléfono:</label>
+          <label id="petPhone" class="col-12 datospet"></label>
           <label class="col-12 titulospet">ID-PETIT:</label>
-          <label id="petid" class="col-12 datospet"></label>
-          <label class="col-12 titulospet">Dirección:</label>
-          <label id="address" class="col-12 datospet"></label>
+          <label id="petId" class="col-12 datospet"></label>
+          <label class="col-12 titulospet">Veterinaria:</label>
+          <label id="petVetName" class="col-12 datospet"></label>
+
         </div><!-- termina columna cartilla digital donde estan datos1 de mascota-->
     </div><!--termian renglón cartilla digital donde estan datos e imagen de mascota-->
     <div class="row"><!--renglón cartilla digital donde estan el titulo de la tabla-->
@@ -50,9 +56,9 @@
         <thead id ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
           <tr><!--fila donde estan los nombres de las columnas de la tabla-->
             <th data-field="sn">S/N</th>
-            <th data-field="tipovacuna">TIPO DE VACUNA</th>
-            <th data-field="fecha">FECHA</th>
-            <th data-field="descripcion">DESCRIPCIÓN</th>
+            <th data-field="vaccineType">TIPO DE VACUNA</th>
+            <th data-field="vaccineDate">FECHA</th>
+            <th data-field="vaccineDescription">DESCRIPCIÓN</th>
           </tr><!-- termina fila donde estan los nombres de las columnas de la tabla-->
         </thead><!--termina área donde estan los nombres de las columnas de la tabla-->
 
