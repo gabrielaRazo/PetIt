@@ -20,6 +20,7 @@
           ><img src="./assets/SVG/logo-petit.svg" width="100px"
         /></a>
         <button
+          id="font-menu"
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -31,7 +32,7 @@
           Menú<i class="fa fa-bars ml-2"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSignup">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" id="options">
             <li class="nav-item active">
               <a class="nav-link" href="#"
                 >Inicio <span class="sr-only">(current)</span></a
@@ -46,10 +47,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link" href="#">Contacto</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" id="btn-ingresar">
               <a
-                class="btn btn-signup dropdown-toggle"
-                id="navbarSignup"
+                class="btn btn-inicio dropdown-toggle"
                 role="button"
                 data-toggle="dropdown"
                 href="#"
@@ -64,7 +64,9 @@
         </div>
       </div>
     </nav>
-    <h1>Blog</h1>
+
+    <h1 id="title">Blog</h1>
+    <hr id="line-title" />
 
     <div class="container-fluid">
       <div class="row" id="first">
@@ -72,6 +74,7 @@
           <div class="card">
             <img src="./assets/JPEG/golden.jfif" class="card-img-top" />
             <div class="card-body">
+              <hr id="line-cards" />
               <h5 class="card-title">How To Keep Your Dogs Joints Healthy</h5>
               <h6 id="author">
                 21 enero 2019
@@ -96,6 +99,7 @@
               alt="..."
             />
             <div class="card-body">
+              <hr id="line-cards" />
               <h5 class="card-title">Dog Car Safety Tips</h5>
               <h6 id="author">
                 21 ENERO, 2020
@@ -121,6 +125,7 @@
               alt="..."
             />
             <div class="card-body">
+              <hr id="line-cards" />
               <h5 class="card-title">How to Adopt a Dog</h5>
               <h6 id="author">
                 21 ENERO, 2020
@@ -149,6 +154,7 @@
               alt="..."
             />
             <div class="card-body">
+              <hr id="line-cards" />
               <h5 class="card-title">Why Do Dogs Have Itchy Ears?</h5>
               <h6 id="author">
                 21 ENERO, 2020
@@ -172,6 +178,7 @@
               alt="..."
             />
             <div class="card-body">
+              <hr id="line-cards" />
               <h5 class="card-title">What to Do If Your Dog Has Dry Skin</h5>
               <h6 id="author">
                 21 ENERO, 2020
@@ -197,6 +204,7 @@
             />
             <div class="card-body">
               <h5 class="card-title">
+                <hr id="line-cards" />
                 Dog Nutrition Basics - Essential Health Nutrients
               </h5>
               <h6 id="author">
@@ -229,7 +237,7 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="footer-brand">
+      <div class="footer-copyright">
         ®PET IT 2020 Reservados todos los derechos.
       </div>
     </footer>
