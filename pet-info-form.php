@@ -3,7 +3,7 @@
 
         <div class="petInfo">
             <form class="petInfo-form" action="TBD">
-        
+
                 <div class="singlePetInfo">
                     <label for="petName">NOMBRE: </label><input type="text" name="petName" id="petName" autofocus><br>
                 </div>
@@ -35,18 +35,13 @@
                 <div class="singlePetInfo btn ">
                     <button type="submit" value="Actualizar" class="btn submitPetInfoButton float-right">Actualizar</button>
                 </div clas>
-        
-        
+
+
             </form>
-            
+
         </div>
 
-    
+
 
 
 <?php include "./footer.html" ?><!--Se manda llamara la pagina de footer mediante php-->
-
-
-
-
-      
