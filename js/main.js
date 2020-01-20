@@ -16,12 +16,15 @@ const menuTop = () => {
 $('.owl-one').owlCarousel({
   margin: 10,
   nav: true,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout:4000,
   responsive: {
       0: {
           items: 1
       },
-      600: {
-          items: 3
+      768: {
+          items: 2
       },
       1000: {
           items: 3
@@ -33,6 +36,8 @@ $('.owl-two').owlCarousel({
   margin: 10,
   loop: true,
   nav: true,
+  autoplay:true,
+  autoplayTimeout: 5000, 
   responsive: {
       0: {
           items: 1
