@@ -62,7 +62,7 @@ body {
 }
 /*menu*/
 .navbar-collapse{
-  background: white;
+  background: transparent;
 }
 .navbar-toggler i {
   font-size: 1.5rem;
@@ -255,41 +255,6 @@ footer {
 }
 
 /*section team*/
-
-@media (max-width: 992px){
-  .carousel-caption{
-      padding: 0 30% 0 15%;
-  }
-  .carousel-caption h3{
-      font-size: 2rem;
-  }
-  .carousel-indicators li {
-      width: 15px;
-      height: 15px;
-  }
-  .carousel-caption p{
-      font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px){
-  .carousel{
-      margin-top: 70px;
-  }
-  .carousel-caption h3, .carousel-caption p{
-      display: none;
-  }
-  .carousel-indicators li {
-      width: 10px;
-      height: 10px;
-  }
-  .carousel-control-prev, .carousel-control-next {
-      font-size: 1.5rem;
-  }
-  .navbar-petit {
-      background: #ffffff;
-  }
-}
 
 .carousel-wrap {
   width: 1000px;
@@ -647,20 +612,40 @@ p {
 #photo {
   padding-bottom: 10px;
 }
-/* 
-@font-face {
-  font-family: Assistant-Regukar;
-  src: url(./fonts/Assistant-Regular.woff);
+@media (max-width: 992px){
+  .carousel-caption{
+      padding: 0 30% 0 15%;
+  }
+  .carousel-caption h3{
+      font-size: 2rem;
+  }
+  .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+  }
+  .carousel-caption p{
+      font-size: 1rem;
+  }
 }
-@font-face {
-  font-family: Assistant-Bold;
-  src: url(./fonts/Assistant-Bold.woff);
+
+@media (max-width: 768px){
+  .carousel{
+      margin-top: 70px;
+  }
+  .carousel-caption h3, .carousel-caption p{
+      display: none;
+  }
+  .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+      font-size: 1.5rem;
+  }
+  .navbar-petit {
+      background: #ffffff;
+  }
+  .navbar-collapse{
+    background: #ffffff;
+  }
 }
-@font-face {
-  font-family: HeadingPro-Regular;
-  src: url(./fonts/Heading-Pro-Book-trial.woff);
-}
-@font-face {
-  font-family: HeadingPro-Bold;
-  src: url(./fonts/Heading-Pro-Bold-trial.woff);
-} */
