@@ -51,9 +51,9 @@
         <nav id= "vacunas">Vacunas Recibidas</nav>
       </div><!--termina columna cartilla digital donde estan el titulo de la tabla-->
     </div><!--termina renglón cartilla digital donde estan el titulo de la tabla-->
-    <div class="table border6"><!--área donde esta la tabla-->
+    <div class="table border"><!--área donde esta la tabla-->
       <table id ="table_vacunas" class="table"><!-- tabla-->
-        <thead id ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
+        <thead class ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
           <tr><!--fila donde estan los nombres de las columnas de la tabla-->
             <th data-field="sn">S/N</th>
             <th data-field="vaccineType">TIPO DE VACUNA</th>

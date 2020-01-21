@@ -51,7 +51,7 @@
   background-color: white;
   color: #330033;
   border-color: none;
-  
+
 }
 
 .purple {
@@ -106,14 +106,11 @@
   border-right: none;
 }
 
-#titletable {
+.titletable {
   background-color: #330033;
   color: white;
 
 }
-
-
-
 .petpic{
   margin-top: 2em;
   margin-left: 1.5em;
@@ -184,7 +181,7 @@ margin-top: 20px;
   width: 60%;
   padding: 2em 2em;
   border: none;
-  
+
 }
 
 .petInfo-form {
@@ -193,14 +190,14 @@ margin-top: 20px;
   max-width: 80%;
   border: none;
   border-radius: 1em;
-  
+
 }
 
 .singlePetInfo {
   margin: 1em auto;
   display: block;
   padding: 1em 1em;
-  margin: 1em 1em;  
+  margin: 1em 1em;
 }
 
 .singlePetInfo label {
@@ -392,3 +389,13 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+/*Comienza My Pets*/
+
+.mypetsback {
+    background-color:#F2F2F2;
+    width: 100%;
+    padding: 2em 2em;
+    border: none;
+
+  }
