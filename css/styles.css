@@ -648,6 +648,14 @@ h6 {
 p {
   text-align: justify;
 }
+#bold {
+  font-weight: bold;
+}
+#bold-and-italics {
+  font-weight: bold;
+  margin-left: 20px;
+  font-style: italic;
+}
 #photo {
   padding-bottom: 10px;
 }
