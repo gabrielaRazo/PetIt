@@ -592,6 +592,11 @@ h6 {
   position: relative;
   margin-bottom: 50px;
 }
+
+#link-blogs:hover {
+  color: var(--primary);
+}
+
 #line-lastnews {
   color: var(--yellow);
   background-color: var(--yellow);
