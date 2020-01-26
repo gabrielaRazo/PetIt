@@ -1,6 +1,7 @@
 <?php include "./header.html" ?><!--Se manda llamara la pagina de header mediante php-->
 
 <script src="./js/mypets.js"> </script>
+<link rel="stylesheet" href="/css/mypets.css">
 
 <section><!--Toda la parte que contien lo relacionado a la catilla digital-->
   <div class="container-md">
@@ -12,13 +13,13 @@
   </div>
   <div class="container -md">
     <div class="mypetsback">
-      <button onclick="window.location.href ='/newpet.php'"type="button" class="btn btn-lg" name="newpet" id= "newpet">NUEVA MASCOTA</button>
+      <button onclick="window.location.href ='/newpet.php'"type="button" class="plus btn btn-primary" name="newpet" id= "newpet"><i class="fas fa-plus plus"></i> NUEVA MASCOTA</button>
     </div>
     <div class="table border">
       <table id="pets" class="table">
         <thead class ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
           <tr><!--fila donde estan los nombres de las columnas de la tabla-->
-            <th data-field="petPic">FOTO</th>
+            <th data-field="petPic" id="petPic">FOTO</th>
             <th data-field="petName">NOMBRE</th>
             <th data-field="petVaccines" data-formatter="petButtonVaccines">VACUNAS</th>
             <th data-field="petCalendar" data-formatter="petCalendarButton">CALENDARIO</th>

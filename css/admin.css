@@ -39,6 +39,14 @@
   font-family: HeadingPro-Bold;
   src: url(./fonts/Heading-Pro-Bold-trial.woff);
 }
+@font-face {
+  font-family: Assistant-Regular;
+  src: url(./fonts/Assistant-Regular.woff);
+}
+@font-face {
+  font-family: Assistant-Bold;
+  src: url(./fonts/Assistant-Bold.woff);
+}
 /*Comienza header*/
 
 .tamanochico {
@@ -389,13 +397,3 @@ footer {
     font-size: 1.5rem;
   }
 }
-
-/*Comienza My Pets*/
-
-.mypetsback {
-    background-color:#F2F2F2;
-    width: 100%;
-    padding: 2em 2em;
-    border: none;
-
-  }

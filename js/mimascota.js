@@ -40,7 +40,7 @@ var datoscartilla = {
   "petAddress":"Av. Argómedo #6241,Villa altos del nilo,Guadalajara",
   "petColor":"Blanco",
   "petPhone":"33-44-66-77-99",
-  "petPic":"assets/JPG/perrito.png"
+  "petPic":"assets/PNG/new-03.png"
 };
 
 $(document).ready(function() {
@@ -66,6 +66,7 @@ function setLabelText(labelId, labelText){
   $(labelId).empty()
   $(labelId).append(labelText)
 }
+
 
 function llenarTabla() {
   $('#table_vacunas').bootstrapTable({data:data})
