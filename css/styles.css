@@ -522,14 +522,25 @@ span.img-text:hover {
 .form {
   font-family: Assistant-Bold;
 }
+.form .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  font-family: Assistant-Bold;
+  color: var(--gray);
+  border-top: 3px solid var(--light);
+  border-radius: 0;
+  background: var(--light);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.form .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+  border-top: 3px solid var(--gray);
+}
 .form .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: var(--primary);
   border: none;
   border-top: 3px solid var(--yellow);
-  border-radius: 0;
   background: var(--light);
 }
-.form .tab-content{
+.form{
   background: var(--light);
   padding: 1rem .5rem;
 }
@@ -587,12 +598,8 @@ span.img-text:hover {
 }
 /* Estilos Blog */
 #navbarPetit_blog {
-  position: static;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  background: white;
+  background: var(--white);
+  border-bottom: 3px solid var(--primary);
 }
 #navbarPetit_blog ul li a {
   color: var(--primary);

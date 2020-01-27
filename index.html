@@ -30,18 +30,18 @@
         <div class="collapse navbar-collapse" id="navbarSignup">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#navbarPetit">
                 Inicio <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#team">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -199,7 +199,7 @@
       </div>
     </section>
 
-    <section class="section-team py-5">
+    <section class="section-team py-5" id="team">
       <div class="title">
         <h2 class="text-white">Nuestro equipo</h2>
         <div class="title-divider"></div>
@@ -450,7 +450,7 @@
       </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5" id="contacto">
       <div class="title">
         <h2>Enviar correo</h2>
         <div class="title-divider"></div>
@@ -458,7 +458,7 @@
       <div class="container">
         <div class="row py-5">
           <div class="col-lg-9 col-md-8 col-sm-12 col-12">
-            <form method="POST" action="" class="form" autocomplete="off">
+            <form method="POST" action="" class="form" autocomplete="off" style="background: transparent;">
               <div class="form-group-icon">
                 <input type="text" placeholder="Nombre" class="form-group-input" name="">
                 <i class="fa fa-user"></i>
@@ -526,7 +526,7 @@
               </li>
             </ul>
             <div class="tab-content" id="myTabRegisterUserLabel">
-              <form method="POST" action="" class="tab-pane fade show active" id="client" role="tabpanel" aria-labelledby="client-tab">
+              <form method="POST" action="" class="tab-pane fade show active form" id="client" role="tabpanel" aria-labelledby="client-tab">
                   <div class="form-group-icon">
                     <input type="text" placeholder="Nombre" class="form-group-input" name="">
                     <i class="fa fa-user"></i>
@@ -536,6 +536,10 @@
                     <i class="fa fa-user"></i>
                   </div>
                   <div class="form-group-icon">
+                    <input type="text" placeholder="Correo electrónico" class="form-group-input" name="">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="form-group-icon">
                     <input type="password" placeholder="Escribe una contraseña" class="form-group-input" name="">
                     <i class="fa fa-key"></i>
                   </div>
@@ -543,26 +547,17 @@
                     <input type="password" placeholder="Confirma tu contraseña" class="form-group-input" name="">
                     <i class="fa fa-key"></i>
                   </div>
-                  <div class="form-group-icon">
-                    <input type="text" placeholder="Correo electrónico" class="form-group-input" name="">
-                    <i class="fa fa-envelope"></i>
+                  <div class="form-checkbox ml-3 py-2">
+                    <input type="checkbox" class="input-checkbox" name="" id="termns">
+                    <label for="terms">Acepto términos y condiciones</label>
                   </div>
-                  <div class="form-group-icon">
-                    <input type="number" placeholder="¿Cuántas mascotas registrarás?" class="form-group-input" name="">
-                    <i class="fa fa-dog"></i>
+                  <div class="d-flex flex-column ml-3 py-2">
+                    <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer términos </span></button>
+                    <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer condiciones </span></a>
                   </div>
-                
-                <div class="form-checkbox ml-3 py-2">
-                  <input type="checkbox" class="input-checkbox" name="" id="termns">
-                  <label for="terms">Acepto términos y condiciones</label>
-                </div>
-                <div class="d-flex flex-column ml-3 py-2">
-                  <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer términos </span></button>
-                  <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer condiciones </span></a>
-                </div>
-                <button type="submit" class="btn btn-outline-primary float-right my-2">Registrarse</button>
+                <button type="submit" class="btn btn-outline-primary float-right mt-4 mb-2">Registrarse</button>
               </form>
-              <form method="POST" action="" class="tab-content fade" id="login" role="tabpanel" aria-labelledby="login-tab">
+              <form method="POST" action="" class="tab-pane fade form" id="veterinarian" role="tabpanel" aria-labelledby="veterinarian-tab">
                 <div class="form-group-icon">
                   <input type="text" placeholder="Nombre" class="form-group-input" name="">
                   <i class="fa fa-user"></i>
@@ -575,6 +570,14 @@
                   <input type="text" placeholder="Correo electrónico" class="form-group-input" name="">
                   <i class="fa fa-envelope"></i>
                 </div>
+                <div class="form-group-icon">
+                  <input type="password" placeholder="Escribe una contraseña" class="form-group-input" name="">
+                  <i class="fa fa-key"></i>
+                </div>
+                <div class="form-group-icon">
+                  <input type="password" placeholder="Confirma tu contraseña" class="form-group-input" name="">
+                  <i class="fa fa-key"></i>
+                </div>
               <div class="form-checkbox ml-3 py-2">
                 <input type="checkbox" class="input-checkbox" name="" id="termns">
                 <label for="terms">Acepto términos y condiciones</label>
@@ -583,7 +586,7 @@
                 <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer términos </span></button>
                 <a href="" class="link-arrows" target="_blank"><i class="fa fa-book mr-1"></i><span>Leer condiciones </span></a>
               </div>
-              <button type="submit" class="btn btn-outline-primary float-right my-2">Registrarse</button>
+              <button type="submit" class="btn btn-outline-primary float-right mt-4 mb-2">Registrarse</button>
               </form>
             </div>
           </div>
@@ -600,28 +603,30 @@
           <div class="modal-title">
             <h2>Ingreso al sitio</h2>
           </div>
-          <form method="POST" action="" class="form" autocomplete="off">
+          
           <div class="modal-body">
             <ul class="nav nav-tabs" id="myTabLogin" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#login" role="tab" aria-controls="home" aria-selected="true">Ya estoy registrado</a>
               </li>
             </ul>
+            <form method="POST" action="" class="form" autocomplete="off">
             <div class="tab-content" id="myTabLoginContent">
-              <div clas="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                <div class="form-group-icon">
-                  <input type="email" placeholder="Correo electrónico" class="form-group-input" name="">
-                  <i class="fa fa-envelope"></i>
+              
+                <div clas="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                  <div class="form-group-icon">
+                    <input type="email" placeholder="Correo electrónico" class="form-group-input" name="">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="form-group-icon">
+                    <input type="password" placeholder="Contraseña" class="form-group-input" name="">
+                    <i class="fa fa-key"></i>
+                  </div>
                 </div>
-                <div class="form-group-icon">
-                  <input type="password" placeholder="Contraseña" class="form-group-input" name="">
-                  <i class="fa fa-key"></i>
-                </div>
-              </div>
             </div>
-            <button type="submit" class="btn btn-outline-primary float-right my-3">Ingresar</button>
+            <button type="submit" class="btn btn-outline-primary float-right mt-4 mb-2">Ingresar</button>
+            </form>
           </div>
-          </form>
         </div>
       </div>
     </div>
