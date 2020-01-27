@@ -1,0 +1,23 @@
+{
+  "name": "petit-project",
+  "version": "1.0.0",
+  "description": "x",
+  "main": "js/main.js",
+  "scripts": {
+    "browser":"browser-sync start --server --files \"*.html, ./css/**/*.css, ./js/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masluss2903/PetIt.git"
+  },
+  "author": "TeamPeti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Masluss2903/PetIt/issues"
+  },
+  "homepage": "https://github.com/Masluss2903/PetIt#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
