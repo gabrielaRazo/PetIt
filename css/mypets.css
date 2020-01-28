@@ -5,7 +5,10 @@
   margin: auto;
 }
 
-.mypetsback {
+
+
+
+.mypetsback, .myclients {
     background-color:#F2F2F2;
     width: 100%;
     padding: 1em 1em;
@@ -74,4 +77,8 @@ button.btnVaccines:onclick{
 table {
     table-layout: fixed;
     word-wrap: break-word;
+}
+
+.table td, .table th {
+  text-align: center;
 }
