@@ -2,20 +2,20 @@
 
 var data = [
   {
-    "petPic": "assets/PNG/perrito.png",
-    "petName":"siri",
+    "petPic": "assets/JPEG/siri.jpg",
+    "petName":"Siri",
     "petId":"3",
     "clientId":"3",
     "vetId":"5"
   },{
-    "petPic": "assets/PNG/perrito.png",
-    "petName":"pablo",
+    "petPic": "assets/JPEG/jacinto.jpg",
+    "petName":"Jacinto",
     "petId":"2",
     "clientId":"3",
     "vetId":"5"
   },{
-    "petPic": "assets/PNG/new-03.png",
-    "petName":"siri",
+    "petPic": "assets/JPEG/julia.jpg",
+    "petName":"Julia",
     "petId":"1",
     "clientId":"3",
     "vetId":"5"
