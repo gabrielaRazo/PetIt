@@ -8,22 +8,22 @@ var data = [
   },{
     "sn":"S",
     "vaccineType":"QUÍNTUPLE 1RA",
-    "vaccineDate":"15/01/2018",
+    "vaccineDate":"23/03/2018",
     "vaccineDescription":"PARVOVIROSIS/MOQUILLO/HEPATITIS/PARAINFLUENZA"
   },{
-    "sn":"N",
+    "sn":"S",
     "vaccineType":"QUÍNTUPLE 2RA",
-    "vaccineDate":"08/05/2018",
+    "vaccineDate":"08/05/2019",
     "vaccineDescription":"PARVOVIROSIS/MOQUILLO/HEPATITIS/PARAINFLUENZA"
   },{
     "sn":"S",
     "vaccineType":"SEXTUPLE",
-    "vaccineDate":"11/11/2018",
+    "vaccineDate":"11/11/2019",
     "vaccineDescription":"LEPTOSPIROSIS CANINA"
   },{
-    "sn":"S",
+    "sn":"N",
     "vaccineType":"TOS DE LAS PERRERAS",
-    "vaccineDate":"2/02/2019",
+    "vaccineDate":"2/02/2020",
     "vaccineDescription":"RABIA CANINA"
   }
 ];
@@ -32,7 +32,7 @@ var data = [
 var datoscartilla = {
   "petName":"Siri",
   "petGender":"Hembra",
-  "petOwner":"Parásito Domésticado",
+  "petOwner":"María Martínez",
   "petVetName":"Clínica Guau Vet",
   "petBirthDate":"01 de diciembre del 2017",
   "petBreed":"Golden Retriever",
@@ -40,7 +40,7 @@ var datoscartilla = {
   "petAddress":"Av. Argómedo #6241,Villa altos del nilo,Guadalajara",
   "petColor":"Blanco",
   "petPhone":"33-44-66-77-99",
-  "petPic":"assets/PNG/new-03.png"
+  "petPic":"assets/JPEG/siri.jpg"
 };
 
 $(document).ready(function() {
@@ -70,4 +70,12 @@ function setLabelText(labelId, labelText){
 
 function llenarTabla() {
   $('#table_vacunas').bootstrapTable({data:data})
+}
+
+function element(value){
+  if(value === "S"){
+    return value = '<i class="fas fa-check ok"></i>'
+  } else{
+    return value = '<i class="fas fa-times not"></i>'
+  }
 }

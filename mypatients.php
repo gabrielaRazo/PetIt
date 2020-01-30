@@ -13,7 +13,7 @@
   </div>
   <div class="container -md">
     <div class="mypetsback">
-      <button onclick="window.location.href ='/createpet.php'"type="button" class="plus btn btn-primary" name="newpet" id= "newpet"><i class="fas fa-plus plus"></i> NUEVA PACIENTE</button>
+      <button onclick="window.location.href ='/createpet.php'"type="button" class="plus btn btn-primary" name="newpet" id= "newpet"><i class="fas fa-plus plus"></i> NUEVO PACIENTE</button>
     </div>
     <div class="table border">
       <table id="pets" class="table">

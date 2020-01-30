@@ -55,7 +55,7 @@
       <table id ="table_vacunas" class="table"><!-- tabla-->
         <thead class ="titletable"><!--área donde estan los nombres de las columnas de la tabla-->
           <tr><!--fila donde estan los nombres de las columnas de la tabla-->
-            <th data-field="sn">S/N</th>
+            <th data-field="sn" data-formatter="element">S/N</th>
             <th data-field="vaccineType">TIPO DE VACUNA</th>
             <th data-field="vaccineDate">FECHA</th>
             <th data-field="vaccineDescription">DESCRIPCIÓN</th>
