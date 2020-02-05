@@ -13,7 +13,8 @@
 }
 
 .btnVaccines,
-.calendarBtn {
+.calendarBtn,
+.cartilla {
   border-color: #330033;
   font-size: 1em;
   color: #330033;
@@ -22,7 +23,8 @@
 }
 
 button.calendarBtn:hover,
-button.btnVaccines:hover {
+button.btnVaccines:hover,
+button.cartilla:hover {
   color: #fff;
   background-color: #330033;
   border-color: #330033;

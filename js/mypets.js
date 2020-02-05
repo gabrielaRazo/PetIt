@@ -35,16 +35,16 @@ function petCalendarButton(value){
 }
 
 function petTwoBtns(value){
-  var cartillaBtn = '<button type="button" onclick="window.location.href =\'/mimascota.php?petId=' + value + '\';" class="btn btn-outline-success cartillaBtn"><i class="fas fa-eye"></i></button>'
-  var deleteBtn = '<button type="button" onclick="window.location.href =\'/index.html?petId=' + value + '\';" class="btn btn-outline-danger deleteBtn"><i class="fas fa-trash-alt"></i></button>'
-  return cartillaBtn + deleteBtn;
+  var cartillaBtn = '<button type="button" onclick="window.location.href =\'/mimascota.php?petId=' + value + '\';" class="btn btn-outline-primary cartilla">CARTILLA <i class="fas fa-eye"></i></button>'
+  //var deleteBtn = '<button type="button" onclick="window.location.href =\'/index.html?petId=' + value + '\';" class="btn btn-outline-danger deleteBtn"><i class="fas fa-trash-alt"></i></button>'
+  return cartillaBtn;
 }
 
 function petThreeBtns(value){
   var cartillaBtn = '<button type="button" onclick="window.location.href =\'/mimascota.php?petId=' + value + '\';" class="btn btn-outline-success cartillaBtn"><i class="fas fa-eye"></i></button>'
   var updateBtn = '<button type="button" onclick="window.location.href =\'/updatepet.php?petId=' + value + '\';" class="btn btn-outline-primary updateBtn"><i class="fas fa-edit"></i></button>'
-  var deleteBtn = '<button type="button" onclick="window.location.href =\'/index.htm?petId=' + value + '\';" class="btn btn-outline-danger deleteBtn"><i class="fas fa-trash-alt"></i></button>'
-  return cartillaBtn + updateBtn + deleteBtn;
+  //var deleteBtn = '<button type="button" onclick="window.location.href =\'/index.html?petId=' + value + '\';" class="btn btn-outline-danger deleteBtn"><i class="fas fa-trash-alt"></i></button>'
+  return cartillaBtn + updateBtn;
 }
 
 function petPic(value){
