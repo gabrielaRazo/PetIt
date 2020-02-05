@@ -67,16 +67,6 @@ button.btnVaccines:onclick {
   border-width: 1.9px;
 }
 
-.petpic2 {
-  max-width: 50%;
-  height: 250px;
-  width: 250px;
-}
-
-#petPic {
-  width: 250px !important;
-  height: 250px !important;
-
 
 table {
   table-layout: fixed;
