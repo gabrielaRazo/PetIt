@@ -111,32 +111,32 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
-  font-family: 'HeadingPro-Bold';
+  font-family: "HeadingPro-Bold";
   border-right: none;
 }
 
 .titletable {
   background-color: #330033;
   color: white;
-
 }
-.petpic{
+#petpic {
   margin-top: 2em;
   margin-left: 1.5em;
   height: 250px;
   width: 250px;
 }
 
-.titelcol{
+.titelcol {
   margin: 20px;
 }
-.table td, .table th {
+.table td,
+.table th {
   text-align: center;
 }
 
 #borderrow {
-  border-radius: .50px;
-  border-color: #2E82BC;
+  border-radius: 0.5px;
+  border-color: #2e82bc;
   border-style: solid;
   border-width: auto;
   border-left: none;
@@ -144,16 +144,15 @@
   border-top: none;
 }
 
-.titulospet{
-color: #2E82BC;
-font-family: 'Assistant';
-font-weight: bold;
-font-size: 1.5em;
-margin-top: 20px;
-
+.titulospet {
+  color: #2e82bc;
+  font-family: "Assistant";
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
-.datospet{
+.datospet {
   color: #330033;
   font-family: "Assistant";
   font-weight: bold;
@@ -185,18 +184,17 @@ margin-top: 20px;
   padding-left: 10px;
 }
 
-
-.ok{
+.ok {
   color: var(--success);
   font-size: 1.5em;
 }
-.not{
+.not {
   color: var(--danger);
   font-size: 1.5em;
 }
 /* comienza forma de información de mascota */
 .petInfo-form {
-  background-color:rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242);
   margin: 5em auto;
   max-width: 80%;
   height: auto;
@@ -222,12 +220,12 @@ margin-top: 20px;
   padding: 0.5em 0.5em;
 }
 
-.new-color{
-  background-color:rgb(118, 178, 56);
+.new-color {
+  background-color: rgb(118, 178, 56);
   border: none;
 }
 .new-color:hover {
-  background-color:rgb(118,120,0);
+  background-color: rgb(118, 120, 0);
 }
 
 .image_preview {
@@ -244,9 +242,6 @@ margin-top: 20px;
   display: none;
   width: 30%;
 }
-
-
-
 
 /* Comienza footer*/
 footer {
