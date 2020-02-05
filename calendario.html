@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pet it - Oficial</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./assets/icono-petit.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/fullCalendar/core/main.css">
+    <link rel="stylesheet" href="./css/fullCalendar/daygrid/main.css">
+    <link rel="stylesheet" href="./css/calendar.bootstrap.css">
+  </head>
+  <body>
+    
+    <div class="container">
+        <div id="calendar"></div>
+        <div class="d-flex flex-column flex-md-row justify-content-around py-3" style="background: #efefef;">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div style="width:100px;height:3px;background: skyblue;"></div><p class="pt-2 px-2">Vacuna Obligatoria</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div style="width:100px;height:3px;background: yellow;"></div><p class="pt-2 px-2">Vacuna Opcional</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-content-center">
+                <div style="width: 30px; height:30px;background: red;"></div>
+                <p class="px-2 pt-1">Dia actual</p>
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/all.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/fullcalendar/core/main.js"></script>
+    <script src="./js/fullcalendar/daygrid/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'dayGrid' ],
+            locale: 'es',
+            header: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            events: 'http://localhost:3000/js/events.json'
+        });
+
+        calendar.render();
+      });</script>
+  </body>
+</html>
