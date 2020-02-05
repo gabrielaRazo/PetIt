@@ -74,7 +74,7 @@
   margin-top: 20px;
 }
 
-.dropdown-item:hover {
+.edit:hover {
   background-color: #330033;
   color: white !important;
 }

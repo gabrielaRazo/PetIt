@@ -1,5 +1,5 @@
 <?php include "./header.html" ?><!--Se manda llamara la pagina de header mediante php-->
-<link rel="stylesheet" href="css/admin.css">
+
 <script src="./js/mimascota.js"> </script>
 
 <section><!--Toda la parte que contien lo relacionado a la catilla digital-->
