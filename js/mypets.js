@@ -25,12 +25,12 @@ var data = [
 
 
 function petButtonVaccines(value){
-  var btnVaccines = '<button type="button" onclick="window.location.href =\'/index.html?petId=' + value + '\';" class="btn btn-outline-primary btnVaccines">VER  <i class="fas fa-eye eyeBtn"></i> </button>'
+  var btnVaccines = '<button type="button" onclick="window.location.href =\'/index.html?petId=' + value + '\';" class="btn btn-outline-primary btnVaccines">VER  <i class="fas fa-eye"></i> </button>'
   return btnVaccines;
 }
 
 function petCalendarButton(value){
-  var calendarBtn = '<button type="button" onclick="window.location.href =\'/calendario.html?petId=' + value + '\';" class="btn btn-outline-primary calendarBtn">VER   <i class="fas fa-eye eyeBtn"></i></button>'
+  var calendarBtn = '<button type="button" onclick="window.location.href =\'/calendario.html?petId=' + value + '\';" class="btn btn-outline-primary calendarBtn">VER   <i class="fas fa-eye"></i></button>'
   return calendarBtn;
 }
 
