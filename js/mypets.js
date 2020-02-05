@@ -48,7 +48,7 @@ function petThreeBtns(value){
 }
 
 function petPic(value){
-  return '<img id= "petPic" class="img-rounded rounded petpic2" src="' + value + '" >'
+  return '<img  class="img-rounded rounded petpic2" src="' + value + '" >'
 }
 
 $(document).ready(function() {
