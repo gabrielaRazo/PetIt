@@ -68,6 +68,7 @@ button.btnVaccines:onclick {
 }
 
 .petpic2 {
+  max-width: 50%;
   height: 250px;
   width: 250px;
 }

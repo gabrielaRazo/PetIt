@@ -119,6 +119,12 @@
   background-color: #330033;
   color: white;
 }
+#petpic {
+  margin-top: 2em;
+  margin-left: 1.5em;
+  height: 250px;
+  width: 250px;
+}
 
 .titelcol {
   margin: 20px;
@@ -235,6 +241,12 @@
 .image-preview__image {
   display: none;
   width: 30%;
+}
+
+/* comienza vista vacunas */
+
+.separarBoton {
+  margin-top: 5em;
 }
 
 /* Comienza footer*/
