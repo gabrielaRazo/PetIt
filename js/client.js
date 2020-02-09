@@ -29,8 +29,8 @@ function petCalendarButton(value){
 }*/
 
 function clientThreeBtns(value){
-  var updateBtn = '<button type="button" onclick="window.location.href =\'/createpet.php?clientId=' + value + '\';" class="btn btn-outline-primary updateBtn"><i class="fas fa-edit"></i></button>'
-  var deleteBtn = '<button type="button" onclick="window.location.href =\'/index.html?clientId=' + value + '\';" class="btn btn-outline-danger deleteBtn"><i class="fas fa-trash-alt"></i></button>'
+  var updateBtn = '<button type="button" onclick="window.location.href =\'/create-client.html?clientId=' + value + '\';" class="btn btn-outline-blue mr-2"><i class="fas fa-edit"></i></button>'
+  var deleteBtn = '<button type="button" onclick="window.location.href =\'/client.html?clientId=' + value + '\';" class="btn btn-outline-red mr-2"><i class="fas fa-trash-alt"></i></button>'
   return updateBtn + deleteBtn;
 }
 

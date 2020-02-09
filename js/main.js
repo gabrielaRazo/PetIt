@@ -15,9 +15,11 @@ const menuTop = () => {
 $(".owl-one").owlCarousel({
   margin: 10,
   nav: true,
+  center: true,
   loop: true,
   autoplay: true,
   autoplayTimeout:4000,
+  responsiveClass: true,
   responsive: {
     0: {
       items: 1
