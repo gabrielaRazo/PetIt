@@ -31,7 +31,7 @@
             <p class="px-2 pt-3" style="font-family: Assistant-Bold;">Nombre Usuario</p>
             <i class="fa fa-chevron-down mx-2"></i>
             <div class="dropdown-menu">
-            <a class="dropdown-item" href="./update-user.html"><i class="fas fa-user-edit mr-2"></i>Editar Perfil</a>
+            <a class="dropdown-item" href="./updatepet.php"><i class="fas fa-user-edit mr-2"></i>Editar Perfil</a>
             <a class="dropdown-item" href="./index.html"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar Sesión</a>
             </div>
         </button>
@@ -41,14 +41,15 @@
     <div class="breadcrumb-petit">
     <ol class="breadcrumb-mi-tablero">
         <li class="breadcrumb-item mi-tablero-item"><a href="./my-pets.html">Mi Tablero</a></li>
-        <li class="breadcrumb-item mi-tablero-item active"><a href="./pet-info-form.html">Nuevo Paciente</a></li>
+        <li class="breadcrumb-item mi-tablero-item active"><a href="./update-pet.html">Editar Mascota</a></li>
     </ol>
     </div>
+    <!-- Aquí termina el header, agregado durante migración -->
 
     <div class="container py-4">
         <div class="row"><!--renglón del titulo de la pagina-->
             <div class="col-12"><!--columna del titulo de la pagina-->
-                <h1 class="title">NUEVO PACIENTE</h1>
+                <h1 class="title">EDITAR MI MASCOTA</h1>
             </div><!-- termina columna del titulo de la pagina-->
         </div><!--termina renglón del titulo de la pagina y boton de imprimir-->
 
@@ -190,24 +191,26 @@
         </form>
     </div>
 
+    <script src="./js/pet-photo.js"></script>
+    <script src="./js/dogBreedAPI.js"></script>
+    <script src="./js/simple-select.js"></script>
+    <!-- Aquí termina cuerpo de la vista e inicia footer, agregado durante migración -->
     <footer class="footer">
         <ul class="footer-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Aviso de privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Aviso de privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
         <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="footer-brand">
-            ®PET IT 2020 Reservados todos los derechos.
+          ®PET IT 2020 Reservados todos los derechos.
         </div>
     </footer>
-    <script src="./js/uploadImage.js"></script>
-    <script src="./js/simple-select.js"></script>
-    <script src="./js/pet-photo.js"></script>
-    </body>
+
+  </body>
 </html>

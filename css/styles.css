@@ -204,22 +204,40 @@ body {
 .navbar-petit ul li a:hover {
   color: var(--yellow);
 }
-.dropdown-menu {
+.navbar-petit2 {
+  background: var(--primary);
+}
+.navbar-petit2 ul li a {
+  color: var(--white);
+  margin: 0 5px;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.navbar-petit2 ul li a:hover {
+  color: var(--yellow);
+}
+.navbar-petit .dropdown-menu {
   margin: 0.8rem 0;
   border-radius: 0;
+  padding: 0;
 }
-.dropdown-item:hover,
-.dropdown-item:focus {
+.navbar-petit .dropdown-item{
+  cursor: pointer;
+  margin: 0;
+  padding: .5rem 1rem;
+}
+.navbar-petit .dropdown-item:hover,
+.navbar-petit .dropdown-item:focus {
   color: var(--yellow);
   text-decoration: none;
   background-color: var(--primary);
 }
-.btn-signup {
+.navbar-petit .btn-signup {
   color: var(--primary);
   border: 0.1rem solid var(--primary);
 }
-.btn-signup:hover,
-.btn-signup:focus {
+.navbar-petit .btn-signup:hover,
+.navbar-petit .btn-signup:focus {
   color: var(--yellow);
   background: var(--primary);
 }
@@ -228,6 +246,7 @@ body {
   height: auto;
   padding: 0.5rem 0;
 }
+/*Modales*/
 .modal-title h2 {
   color: var(--primary);
   text-transform: uppercase;
@@ -496,12 +515,18 @@ span.img-text:hover {
   background: var(--secondary);
 }
 /*section blog*/
-.card {
+.title-blog{
+  width: max-content;
+  font-family: Assistant-Bold;
+  color: var(--primary);
+  border-bottom: 5px solid var(--yellow);
+}
+.card-blog {
   border: none;
-  border-radius: 0.7rem;
+  border-radius: 12px;
   transition: 0.3s ease-in-out;
 }
-.card:hover {
+.card-blog:hover {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 .divider-left {
@@ -666,95 +691,6 @@ span.img-text:hover {
   color: var(--secondary);
 }
 /* Estilos Blog */
-#navbarPetit_blog {
-  position: static;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  background: white;
-}
-#navbarPetit_blog ul li a {
-  color: var(--primary);
-  margin: 0 5px;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-}
-
-.card {
-  margin-top: 15px;
-  border: 15px;
-}
-.card img {
-  border-radius: 15px;
-}
-.card h5 {
-  font-family: HeadingPro-Bold;
-  src: url(./fonts/Heading-Pro-Bold-trial.woff);
-  font-size: xx-large;
-  text-transform: uppercase;
-  color: var(--primary);
-}
-#author {
-  font-family: Assistant-Bold;
-  src: url(./fonts/Assistant-Bold.woff);
-}
-#author li {
-  float: right;
-  list-style-type: none;
-  font-family: HeadingPro-Regular;
-  src: url(./fonts/Heading-Pro-Book-trial.woff);
-  font-size: medium;
-}
-h6 {
-  font-family: HeadingPro-Regular;
-  src: url(./fonts/Heading-Pro-Book-trial.woff);
-  font-size: small;
-  text-transform: uppercase;
-}
-#author li::before {
-  content: "■";
-  position: absolute;
-  right: 81px;
-  font-size: 1.1em;
-}
-.btn-primary {
-  color: var(--primary);
-  border: 0.1rem solid var(--primary);
-  background-color: white;
-  font-family: HeadingPro-Bold;
-  src: url(./fonts/Heading-Pro-Bold-trial.woff);
-}
-.card-text {
-  font-family: Assistant-Regukar;
-  src: url(./fonts/Assistant-Regular.woff);
-  font-size: large;
-}
-
-#line-title {
-  color: var(--yellow);
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 0px;
-  background-color: var(--yellow);
-  height: 2px;
-  position: relative;
-}
-#line-cards {
-  color: var(--yellow);
-  width: 100px;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: var(--yellow);
-  height: 2px;
-  position: relative;
-}
-
-#font-menu {
-  font-family: HeadingPro-Regular;
-  src: url(./fonts/Heading-Pro-Book-trial.woff);
-}
 .footer-copyright {
   width: 100%;
   height: auto;

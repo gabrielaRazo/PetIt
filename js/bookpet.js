@@ -69,7 +69,9 @@ function setLabelText(labelId, labelText){
 
 
 function llenarTabla() {
-  $('#table_vacunas').bootstrapTable({data:data})
+  $('#table_vacunas').bootstrapTable({
+    data:data
+  })
 }
 
 function element(value){

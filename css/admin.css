@@ -22,7 +22,7 @@
   --info: #17a2b8;
   --warning: #fcbe10;
   --danger: #b21f1f;
-  --light: #f8f9fa;
+  --light: #efefef;
   --dark: #232323;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -47,206 +47,505 @@
   font-family: Assistant-Bold;
   src: url(./fonts/Assistant-Bold.woff);
 }
+@font-face {
+  font-family: FontAwesome5;
+  src: url(./fonts/fa-regular-400.woff);
+}
+/*Buttons*/
+.btn-blue {
+  width: max-content;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: var(--white);
+  border: none;
+  text-decoration: none;
+  background-color: var(--blue);
+  font-family: Assistant-Bold;
+}
+.btn-blue:hover {
+  text-decoration: none;
+  color: var(--white);
+  box-shadow: 0 4px 0 var(--darkblue);
+}
+.btn-green {
+  width: max-content;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: var(--white);
+  border: none;
+  text-decoration: none;
+  background-color: var(--green);
+  font-family: Assistant-Bold;
+}
+.btn-green:hover {
+  text-decoration: none;
+  color: var(--white);
+  box-shadow: 0 4px 0 var(--darkgreen);
+}
+.btn-yellow {
+  width: max-content;
+  display: block;
+  border: none;
+  text-decoration: none;
+  color: var(--primary);
+  background: var(--yellow);
+  transition: 0.3s ease-in-out;
+}
+.btn-yellow:hover {
+  box-shadow: 0 4px 0 var(--darkyellow);
+}
+.btn-outline-primary{
+  width: max-content;
+  font-size: .9rem;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: .2rem 1.5rem;
+}
+.btn-outline-primary:hover{
+  background: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+.btn-outline-green{
+  width: max-content;
+  font-size: .9rem;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+.btn-outline-green:hover{
+  background: var(--green);
+  color: var(--white);
+  border: 1px solid var(--green);
+}
+.btn-outline-red{
+  width: max-content;
+  font-size: .9rem;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+.btn-outline-red:hover{
+  background: var(--red);
+  color: var(--white);
+  border: 1px solid var(--red);
+}
+.btn-outline-blue{
+  width: max-content;
+  font-size: .9rem;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+.btn-outline-blue:hover{
+  background: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+}
+.btn-yellow:focus, .btn-blue:focus, .btn-outline-primary:focus, .btn-green:focus{outline:none;}
 /*Comienza header*/
-
-.tamanochico {
-  width: 10em;
+.navbar-white{
+  padding: 0;
+  background: var(--white);
+}
+.logo-img{
+  width: 150px;
   height: auto;
-  padding: 2em 2em;
+  margin: 0 5px;
 }
-
-#menusuario {
-  background-color: white;
-  color: #330033;
-  border-color: none;
-  padding: none;
-  padding: none;
+.btn-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 7px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  transition: .3s ease-in-out;
 }
-
-.purple {
-  background-color: #330033;
-  color: white;
+.btn-profile:focus, .btn-profile:hover{background: var(--primary);color: var(--yellow);outline: none;}
+.img-profile{
+  width: 60px;
+  height: 60px;
+  background: green;
 }
-
-.img_menu {
-  width: 70px;
-  height: 70px;
-  margin-top: 20px;
+.dropdown-menu{
+  right: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
 }
-
-.edit:hover {
-  background-color: #330033;
-  color: white !important;
+.dropdown-menu::after{
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  border: 0 15px 15px 15px;
+  border-color: red;
 }
-
-.fas {
-  color: #330033;
-  margin-right: 5px;
-}
-
-.mitablero {
-  font-family: "HeadingPro-Bold";
-  text-transform: uppercase;
-  font-size: 2em;
-  margin: 10px;
-}
-
-#mitableroid {
-  margin-bottom: 3em;
-}
-
-/*Start mi mascota*/
-
-.contenedor1 {
-  border-color: var(--blue);
-  border-style: solid;
-  border-left-width: medium;
-  border-radius: 2em;
-  margin-bottom: 1em;
-}
-
-#vacunas {
-  background-color: #2e82bc;
-  font-size: 2em;
+.dropdown-item{
   text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-family: "HeadingPro-Bold";
-  border-right: none;
+  padding: .5rem 1rem;
+  transition: .3s ease-in-out;
 }
+.dropdown-item:hover{
+  color: var(--white);
+  background: var(--primary);
+}
+/*Breadcrumb*/
+.breadcrumb-mi-tablero{
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--white);
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  background-color: var(--primary);
+  border-radius: 0;
+}
+.breadcrumb-mi-tablero{
 
-.titletable {
-  background-color: #330033;
-  color: white;
 }
-.petpic {
+.breadcrumb-item+.breadcrumb-item::before{
+  padding-left: 0;
+  padding-right: 10px;
+  color: var(--white);
+}
+.breadcrumb-item+.breadcrumb-item{
+  padding: 0;
+}
+.mi-tablero-item {
+  color: var(--white);
+  font-family: HeadingPro-Bold;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin: 5px 10px;
+}
+.mi-tablero-item.active {
+  color: var(--yellow);
+  font-family: HeadingPro-Bold;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin: 5px 0;
+}
+.breadcrumb-item a{color: var(--white);}
+.breadcrumb-item.active a{color: var(--yellow);}
+/*Start Content Panel*/
+.title {
+  width: max-content;
+  color: var(--primary);
+  font-size: 2.5em;
+  border-bottom: 7px solid var(--yellow);
+  font-family: "HeadingPro-Bold";
+  margin: .5rem 0;
+}
+.container-card {
+  width: 100%;
+  height: auto;
+  border-color: var(--secondary);
+  border-style: solid;
+  border-left-width: .2rem;
+  border-radius: 1rem;
+}
+.title-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--primary);
+  background: var(--white);
+  font-family: HeadingPro-Bold;
+  border-bottom: .2rem solid var(--secondary);
+  border-radius: 1rem 1rem 0 0;
+}
+.logo-card{width: 120px;height: auto;}
+.title-card h1{padding: 0 1rem;}
+.pet-pic {
+  border-radius: 1rem;
   margin-top: 2em;
   margin-left: 1.5em;
   height: 250px;
   width: 250px;
+  padding: .1rem;
+  object-fit: cover;
+  background: var(--white);
 }
-
-.titelcol {
-  margin: 20px;
-}
-.table td,
-.table th {
-  text-align: center;
-}
-
-#borderrow {
-  border-radius: 0.5px;
-  border-color: #2e82bc;
-  border-style: solid;
-  border-width: auto;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-}
-
-.titulospet {
-  color: #2e82bc;
-  font-family: "Assistant";
-  font-weight: bold;
+.title-pet {
+  color: var(--secondary);
+  font-family: "Assistant-Bold";
   font-size: 1.5em;
-  margin-top: 20px;
 }
-
-.datospet {
-  color: #330033;
-  font-family: "Assistant";
-  font-weight: bold;
+.info-pet{
+  color: var(--primary);
+  font-family: "Assistant-Bold";
   font-size: 1.3em;
-  padding-bottom: 10px;
 }
-
-#cartdig {
-  font-family: "HeadingPro-Bold";
-  color: #330033;
-  font-weight: bold;
-}
-
-.titmascos {
-  color: #330033;
-  font-size: 2.5em;
-  text-decoration: underline #fcbe10;
+.divider-title-card {
+  width: 100%;
+  height: auto;
+  background-color: var(--secondary);
+  font-size: 2em;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
   font-family: "HeadingPro-Bold";
 }
-
-#cartillalogo,
-#cartdig {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  image-orientation: center;
-  margin-right: 2em;
-  padding-left: 10px;
+.title-table {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
 }
-
+.table{margin: 0;border:0;border-radius: .5rem;}
+.table tbody td:first-child{text-align: center;}
+.table tbody td{color: var(--secondary); font-family: Assistant-Bold;}
 .ok {
-  color: var(--success);
+  color: var(--green);
   font-size: 1.5em;
 }
 .not {
-  color: var(--danger);
+  color: var(--red);
   font-size: 1.5em;
 }
-/* comienza forma de información de mascota */
-.petInfo-form {
+/*Termina table cartilla de mascota*/
+/*Comienza table mis mascotas*/
+.table-my-pet{
+  width: 100%;
+  padding: .5rem 0;
+  background: var(--light);
+}
+.table-my-pet table thead{
+  background: var(--primary);
+  color: var(--white);
+   text-align: center;
+}
+.table-my-pet table tbody tr td{
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.table-my-pet table .pet-pic2{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.table-my-pet table tbody {
+  background: var(--white);
+}
+/* comienza formulario de nueva y editar mascota */
+.pet-info-form {
   background-color: rgb(242, 242, 242);
-  margin: 5em auto;
-  max-width: 80%;
+  width: 100%;
   height: auto;
-  padding: 5em 5em;
+  margin: 0 auto;
+  padding: 1rem 3rem;
   border: none;
   border-radius: 0.5em;
 }
-
-.form-control,
-.form-control {
-  border-left: none;
+.form-label-pet{
+  font-family: Assistant-Bold;
+  color: var(--primary);
+  margin-top: 5px;
+  padding: 0 1rem;
 }
-.col-form-label {
-  font-weight: bold;
+.form-group-input {
+  width: 100%;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  outline: none;
+  color: var(--gray);
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.form-group-input:hover {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background: var(--white);
+}
+.form-group-input:focus {
+  border-color: var(--secondary);
+  background: var(--white);
+  color: var(--secondary);
+}
+.form-group-icon {
+  position: relative;
+  margin: 0.5rem 0;
+}
+.form-group-icon svg {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 9px;
+  color: var(--gray);
+  transition: 0.3s;
+}
+.form-group-icon .form-group-input:hover + svg {
+  color: var(--secondary);
+}
+.form-group-icon .form-group-input:focus + svg {
+  color: var(--secondary);
+}
+.textarea-icon {
+  width: 100%;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.form-group-icon .textarea-icon:focus + svg {
+  color: var(--secondary);
+}
+.textarea-icon:focus {
+  border-color: var(--secondary);
+  background: var(--white);
+  color: var(--secondary);
+}
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
 }
 
-.input-group-text {
-  background-color: white;
-  border-right: none;
-}
-
-.btn-upload-photo {
-  padding: 0.5em 0.5em;
-}
-
-.new-color {
-  background-color: rgb(118, 178, 56);
+.select {
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: var(--gray);
+  background: rgba(0, 0, 0, 0.1);
   border: none;
 }
-.new-color:hover {
-  background-color: rgb(118, 120, 0);
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--gray);
+  left: 0;
+  border-radius: 5px;
+  background-color: transparent;;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: var(--gray) transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  border-radius: 5px;
+  background-color: var(--white);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.select-styled:hover:after {
+  border-color: var(--secondary) transparent transparent transparent;
+}
+.select-styled:active, .select-styled.active {
+  border-radius: 5px;
+  background-color: var(--white);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent var(--secondary) transparent;
 }
 
-.image_preview {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #cccccc;
-  overflow: hidden;
-}
-.image-preview__image {
+.select-options {
   display: none;
-  width: 30%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--secondary);
+  background-color: var(--white);
 }
-
-/* comienza vista vacunas */
-
-.separarBoton {
-  margin-top: 5em;
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: var(--white);
+  background: var(--secondary);
+}
+.select-options li[rel="hide"] {
+display: none;
+}
+.form-input-date{
+  width: 100%;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid var(--gray);
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+  color: var(--gray);
+  position: relative;
+  transition: .3s ease-in-out;
+}
+.form-input-date:hover{
+  border: 1px solid var(--secondary);
+  background: var(--white);
+  color: var(--secondary);
+}
+.form-input-date:after {
+  font-family: "FontAwesome5";
+  font-weight: 900; 
+  content: "\f073";
+  color: var(--gray);
+  padding: 0 5px;
+}
+.form-input-date:hover:after {
+  color: var(--secondary);
+}
+.form-input-date:focus {
+  outline: none;
+}
+.form-input-date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+/* adjust increase/decrease button */
+.form-input-date::-webkit-inner-spin-button {
+  z-index: 1;
+}
+.form-input-date::-webkit-clear-button {
+   z-index: 1;
 }
 
 /* Comienza footer*/
@@ -286,6 +585,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  margin: 0;
 }
 .footer-links li {
   list-style-image: url(../assets/SVG/huella-perro.svg);
@@ -309,7 +609,8 @@ footer {
   color: var(--white);
   background: rgba(0, 0, 0, 0.2);
 }
-
+/*Termina footer*/
+/*Responsive Classes*/
 @media (max-width: 992px) {
   .carousel-caption {
     padding: 0 30% 0 15%;
@@ -339,4 +640,45 @@ footer {
   .carousel-control-next {
     font-size: 1.5rem;
   }
+  .logo-img{width: 100px;}
+  .btn-profile{
+    padding: .3rem .5rem;
+    font-size: .8rem;
+  }
+  .dropdown-item{
+    font-size: .8rem;
+  }
+  .img-profile{width: 50px;height: 50px;}
+  .mi-tablero-item {
+    font-size: 1em;
+    margin: 5px;
+  }
+  .mi-tablero-item.active {
+    font-size: 1em;
+    margin: 5px;
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    padding-right: 15px;
+  }
+  .footer-links {flex-direction: column;}
+  .footer-links {margin: 0; padding: 0;}
+  .footer-links li{margin: .2rem 0;}
+  .footer-links li a{font-size: 1rem;}
+  .social-media a{font-size: 1.5rem;}
+  .title{
+    font-size: 1.8rem;
+    border-width: 3px;
+  }
+  .logo-card{width: 100px;}
+  .title-card{display: flex; justify-content: center; align-items: center; padding: .2rem 0;}
+  .title-card h1 {font-size: 1.5rem;}
+  .pet-pic{width: 200px; height: 200px;}
+  .pet-info-form {
+    padding: 1rem 1rem;
+  }
+
+}
+
+@media(max-width: 480px){
+  
 }

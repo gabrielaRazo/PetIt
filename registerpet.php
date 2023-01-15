@@ -9,6 +9,15 @@ $pet_weight=$_POST['pet_weight'];
 $pet_blood_type=$_POST['pet_blood_type'];
 $pet_chars=$_POST['pet_chars'];
 
+if($_FILES['inpFile']['name']!= "")
+{
+    move_uploaded_file($_FILES['inpFile']['tmp_name'],"uploads/{$_FILES['inpFile']['name']}");
+}
+else {
+    die("no file to upload");
+}
+ 
+
 
 
 $con=mysqli_connect('localhost','root','','test');
@@ -25,5 +34,5 @@ if(!mysqli_query($con,$query)) {
     die('Error inserting records:'.mysql_error);
 }
 else {
-        
+    echo "We did it";
 }
